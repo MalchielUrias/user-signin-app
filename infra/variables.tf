@@ -12,3 +12,8 @@ variable "gcp_svc_key" {
   description = "Path to the service account credentials used by the Terraform host project."
   default     = "~/.config/gcloud/hidden-solstice-402121-44564fd3a51e.json"
 }
+
+variable "tfstate_bucket" {
+  description = "Name of the tfstate bucket"
+  default = "tfstate_bucket"
+}

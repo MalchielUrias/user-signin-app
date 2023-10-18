@@ -7,6 +7,12 @@ terraform {
       version = "5.1.0"
     }
   }
+
+  backend "gcs" {
+    prefix  = "tfstate/"
+    bucket  = "tfstate_bucket"
+    credentials = "~/.config/gcloud/hidden-solstice-402121-44564fd3a51e.json"
+  }
 }
 
 provider "google" {
