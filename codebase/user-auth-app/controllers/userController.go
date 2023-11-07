@@ -14,7 +14,7 @@ import (
 
 func Signup(c *gin.Context) {
 
-	// Get email/password off the req body
+	// Get email/password from the req body
 
 	var body struct {
 		Email    string
