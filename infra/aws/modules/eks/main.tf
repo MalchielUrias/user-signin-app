@@ -55,10 +55,11 @@ resource "aws_eks_node_group" "k8-managed-node" {
   node_group_name = "k8-managed-node"
   node_role_arn   = var.worker_role_arn
   subnet_ids      = var.subnet_ids
+  capacity_type = "SPOT" 
 
   scaling_config {
-    desired_size = 2
-    max_size     = 3
+    desired_size = 3
+    max_size     = 4
     min_size     = 1
   }
 

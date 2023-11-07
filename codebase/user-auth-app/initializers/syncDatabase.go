@@ -1,6 +1,6 @@
 package initializers
 
-import models "command-line-argumentsC:\\Users\\malchiel.urias\\Documents\\Personal Projects\\user-signup-app-go\\codebase\\models\\userModel.go"
+import "github.com/MalchielUrias/user-signin-app/models"
 
 func SyncDatabase() {
 	DB.AutoMigrate(&models.User{})
